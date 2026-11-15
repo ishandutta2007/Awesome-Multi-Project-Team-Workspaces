@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="380" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a" />
+      <stop offset="45%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Accent Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#818cf8" />
+      <stop offset="70%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <!-- Glow Bottom Line -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="25%" stop-color="#6366f1" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="1" />
+      <stop offset="75%" stop-color="#8b5cf6" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Subtle Glow Filters -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="cardGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* Typography */
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+      fill: url(#titleGrad);
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      fill: #cbd5e1;
+      letter-spacing: 0.3px;
+    }
+    .badge-pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      fill: #a5b4fc;
+      letter-spacing: 1.2px;
+    }
+    .card-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      fill: #94a3b8;
+    }
+    .feature-pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #e2e8f0;
+    }
+
+    /* Ambient Dynamic Animations (Placed behind text/on sides) */
+    @keyframes pulseNode {
+      0%, 100% { transform: scale(1); opacity: 0.75; }
+      50% { transform: scale(1.35); opacity: 1; }
+    }
+    @keyframes flowDash {
+      from { stroke-dashoffset: 140; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes floatCard1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes floatCard2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-40px); opacity: 0; }
+      50% { opacity: 0.25; }
+      100% { transform: translateY(380px); opacity: 0; }
+    }
+
+    .node-anim-1 { animation: pulseNode 3.5s infinite ease-in-out; transform-origin: 140px 120px; }
+    .node-anim-2 { animation: pulseNode 4s infinite ease-in-out 1s; transform-origin: 220px 240px; }
+    .node-anim-3 { animation: pulseNode 3s infinite ease-in-out 1.5s; transform-origin: 1060px 130px; }
+    .node-anim-4 { animation: pulseNode 4.5s infinite ease-in-out 0.5s; transform-origin: 980px 250px; }
+
+    .flow-line {
+      stroke: #6366f1;
+      stroke-width: 1.5;
+      stroke-dasharray: 6, 6;
+      animation: flowDash 12s linear infinite;
+      opacity: 0.45;
+    }
+    .flow-line-cyan {
+      stroke: #38bdf8;
+      stroke-width: 1.5;
+      stroke-dasharray: 5, 5;
+      animation: flowDash 10s linear infinite reverse;
+      opacity: 0.45;
+    }
+
+    .float-card-left { animation: floatCard1 6s ease-in-out infinite; }
+    .float-card-right { animation: floatCard2 7s ease-in-out infinite 1s; }
+  </style>
+
+  <!-- Background Base Container -->
+  <rect width="1200" height="380" rx="18" fill="url(#bgGrad)" />
+  <rect width="1196" height="376" x="2" y="2" rx="16" fill="none" stroke="#334155" stroke-width="1.2" opacity="0.6" />
+
+  <!-- Dotted Cyber Grid Mesh (Background) -->
+  <g opacity="0.18">
+    <circle cx="100" cy="60" r="1.5" fill="#94a3b8" />
+    <circle cx="180" cy="60" r="1.5" fill="#94a3b8" />
+    <circle cx="260" cy="60" r="1.5" fill="#94a3b8" />
+    <circle cx="100" cy="140" r="1.5" fill="#94a3b8" />
+    <circle cx="180" cy="140" r="1.5" fill="#94a3b8" />
+    <circle cx="260" cy="140" r="1.5" fill="#94a3b8" />
+    <circle cx="100" cy="220" r="1.5" fill="#94a3b8" />
+    <circle cx="180" cy="220" r="1.5" fill="#94a3b8" />
+    <circle cx="260" cy="220" r="1.5" fill="#94a3b8" />
+    <circle cx="940" cy="60" r="1.5" fill="#94a3b8" />
+    <circle cx="1020" cy="60" r="1.5" fill="#94a3b8" />
+    <circle cx="1100" cy="60" r="1.5" fill="#94a3b8" />
+    <circle cx="940" cy="140" r="1.5" fill="#94a3b8" />
+    <circle cx="1020" cy="140" r="1.5" fill="#94a3b8" />
+    <circle cx="1100" cy="140" r="1.5" fill="#94a3b8" />
+    <circle cx="940" cy="220" r="1.5" fill="#94a3b8" />
+    <circle cx="1020" cy="220" r="1.5" fill="#94a3b8" />
+    <circle cx="1100" cy="220" r="1.5" fill="#94a3b8" />
+  </g>
+
+  <!-- Dynamic Flank Graphics: Workspace Hierarchy (Left Side) -->
+  <g class="float-card-left" opacity="0.85">
+    <!-- Connecting flow paths -->
+    <path class="flow-line" d="M140 120 L220 240 L80 270 Z" />
+    <path class="flow-line-cyan" d="M50 160 L140 120 L190 60" />
+
+    <!-- Mini Workspace Preview Card -->
+    <rect x="50" y="80" width="130" height="74" rx="8" fill="#0f172a" stroke="#312e81" stroke-width="1.2" opacity="0.9" />
+    <circle cx="70" cy="98" r="4" fill="#6366f1" />
+    <rect x="82" y="94" width="70" height="7" rx="3.5" fill="#475569" />
+    <rect x="70" y="114" width="90" height="5" rx="2.5" fill="#334155" />
+    <rect x="70" y="126" width="65" height="5" rx="2.5" fill="#334155" />
+    <circle cx="140" cy="120" r="5" fill="#818cf8" class="node-anim-1" filter="url(#softGlow)" />
+
+    <!-- Project Kanban Card -->
+    <rect x="150" y="200" width="120" height="70" rx="8" fill="#0f172a" stroke="#0369a1" stroke-width="1.2" opacity="0.9" />
+    <rect x="165" y="214" width="50" height="6" rx="3" fill="#38bdf8" />
+    <rect x="165" y="230" width="85" height="12" rx="3" fill="#1e293b" />
+    <rect x="165" y="248" width="60" height="8" rx="2" fill="#334155" />
+    <circle cx="220" cy="240" r="4.5" fill="#38bdf8" class="node-anim-2" filter="url(#softGlow)" />
+  </g>
+
+  <!-- Dynamic Flank Graphics: Team Collaboration & Docs (Right Side) -->
+  <g class="float-card-right" opacity="0.85">
+    <!-- Connecting flow paths -->
+    <path class="flow-line-cyan" d="M1060 130 L980 250 L1120 260 Z" />
+    <path class="flow-line" d="M1060 130 L1130 70" />
+
+    <!-- Teamspace Card -->
+    <rect x="1010" y="90" width="130" height="74" rx="8" fill="#0f172a" stroke="#4c1d95" stroke-width="1.2" opacity="0.9" />
+    <circle cx="1030" cy="108" r="4" fill="#a855f7" />
+    <rect x="1042" y="104" width="70" height="7" rx="3.5" fill="#475569" />
+    <rect x="1030" y="124" width="85" height="5" rx="2.5" fill="#334155" />
+    <rect x="1030" y="136" width="55" height="5" rx="2.5" fill="#334155" />
+    <circle cx="1060" cy="130" r="5" fill="#c084fc" class="node-anim-3" filter="url(#softGlow)" />
+
+    <!-- Knowledge Base Card -->
+    <rect x="920" y="210" width="120" height="70" rx="8" fill="#0f172a" stroke="#164e63" stroke-width="1.2" opacity="0.9" />
+    <rect x="935" y="224" width="45" height="6" rx="3" fill="#2dd4bf" />
+    <rect x="935" y="240" width="85" height="12" rx="3" fill="#1e293b" />
+    <rect x="935" y="258" width="65" height="8" rx="2" fill="#334155" />
+    <circle cx="980" cy="250" r="4.5" fill="#2dd4bf" class="node-anim-4" filter="url(#softGlow)" />
+  </g>
+
+  <!-- Central Glass Card (Ensures Title & Subtitle Remain Crisp in Foreground) -->
+  <g transform="translate(600, 0)" text-anchor="middle">
+    <!-- Semi-transparent protective background shield for foreground text -->
+    <rect x="-370" y="40" width="740" height="295" rx="16" fill="#0b1120" fill-opacity="0.82" stroke="#1e293b" stroke-width="1.2" />
+
+    <!-- Top Badge Pill -->
+    <g transform="translate(0, 68)">
+      <rect x="-185" y="0" width="370" height="30" rx="15" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+      <circle cx="-160" cy="15" r="4" fill="#818cf8" class="node-anim-1" />
+      <text x="10" y="20" class="badge-pill-text" text-anchor="middle">WORKSPACE PLATFORMS &amp; TEAMSPACES</text>
+    </g>
+
+    <!-- Main Title (Strictly Foreground) -->
+    <text x="0" y="152" class="title-text" filter="url(#softGlow)">Awesome Multi-Project Team Workspaces</text>
+
+    <!-- Subtitle (Strictly Foreground) -->
+    <text x="0" y="196" class="subtitle-text">Curated Platforms for Cross-Team Collaboration, Knowledge Hubs &amp; Project Portfolios</text>
+
+    <!-- Feature Pillars / Badges -->
+    <g transform="translate(0, 246)">
+      <!-- Pill 1: Kanban & Agile -->
+      <g transform="translate(-255, 0)">
+        <rect x="-70" y="0" width="140" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="22" class="feature-pill-text" text-anchor="middle">📋 Kanban &amp; Sprints</text>
+      </g>
+      <!-- Pill 2: Multi-Teamspaces -->
+      <g transform="translate(-85, 0)">
+        <rect x="-70" y="0" width="140" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="22" class="feature-pill-text" text-anchor="middle">🏢 Multi-Teamspaces</text>
+      </g>
+      <!-- Pill 3: Docs & Wikis -->
+      <g transform="translate(85, 0)">
+        <rect x="-70" y="0" width="140" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="22" class="feature-pill-text" text-anchor="middle">📚 Knowledge Hubs</text>
+      </g>
+      <!-- Pill 4: Open Source & SaaS -->
+      <g transform="translate(255, 0)">
+        <rect x="-70" y="0" width="140" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="0" y="22" class="feature-pill-text" text-anchor="middle">🛡️ SaaS &amp; Open Source</text>
+      </g>
+    </g>
+
+    <!-- Glowing Bottom Horizon Line -->
+    <rect x="-280" y="318" width="560" height="3" rx="1.5" fill="url(#lineGrad)" />
+  </g>
+</svg>

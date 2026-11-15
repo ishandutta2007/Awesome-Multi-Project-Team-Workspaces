@@ -1,9 +1,14 @@
-# Awesome-Multi-Project-Team-Workspaces
+<div align="center">
 
-# Awesome Multi-Project Team Workspaces
+<img src="./assets/banner.svg" alt="Awesome Multi-Project Team Workspaces Banner" width="100%" />
 
-> A curated list of top Multi-Project Team Workspace platforms — both SaaS/Hosted commercial solutions and open-source alternatives for organizing multiple projects, teams, and knowledge bases under a unified workspace structure.
-> 🌟 Star this repo if you find it useful! 🌟
+# 🚀 Awesome Multi-Project Team Workspaces 🏢
+
+> A curated list of top Multi-Project Team Workspace platforms — both SaaS/Hosted commercial solutions and open-source alternatives for organizing multiple projects, teams, and knowledge bases under a unified workspace structure. 🌐✨
+>
+> 🌟 **Star this repo if you find it useful!** 🌟
+
+</div>
 
 ---
 

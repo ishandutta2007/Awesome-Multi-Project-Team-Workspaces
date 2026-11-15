@@ -71,12 +71,12 @@ AppFlowy is the leading open-source alternative to Notion, bringing together pro
 - **Native cross-platform** performance with a single codebase
 - **Community-driven** and extensible
 
-With **78,384 GitHub stars** (as of November 2026), it is the most widely adopted open-source Notion alternative, explicitly positioned for individuals seeking Notion's functionality with enhanced data security, or enterprises needing customizable collaboration tools with complete data ownership [citation:2][citation:12].
+With **78,384 GitHub_Stars** (as of November 2026), it is the most widely adopted open-source Notion alternative, explicitly positioned for individuals seeking Notion's functionality with enhanced data security, or enterprises needing customizable collaboration tools with complete data ownership [citation:2][citation:12].
 **Best for:** Teams wanting a Notion-style workspace with databases, wikis, and kanban, accepting the Flutter/Rust stack and open-core model.
 
 ### Plane
 **Stack:** TypeScript / (Check repository) | **License:** AGPLv3
-Plane is a modern open-source project management platform positioned as an alternative to Jira, Linear, Monday, and ClickUp, with **62,120 GitHub stars** . It organizes work into **Workspaces** and **Projects**, with issues, cycles, modules, and multiple views (list, kanban, calendar, Gantt) . It is the closest open-source tool to Linear's workflow, with a fast, clean interface that engineers do not complain about . **Trade-off:** It is younger than alternatives, with a small plugin ecosystem and occasional self-hosted upgrade friction [citation:7].
+Plane is a modern open-source project management platform positioned as an alternative to Jira, Linear, Monday, and ClickUp, with **62,120 GitHub_Stars** . It organizes work into **Workspaces** and **Projects**, with issues, cycles, modules, and multiple views (list, kanban, calendar, Gantt) . It is the closest open-source tool to Linear's workflow, with a fast, clean interface that engineers do not complain about . **Trade-off:** It is younger than alternatives, with a small plugin ecosystem and occasional self-hosted upgrade friction [citation:7].
 **Best for:** Engineering teams wanting a Linear-like multi-project workspace they can self-host, accepting a younger ecosystem.
 
 ### OpenProject
@@ -86,7 +86,7 @@ OpenProject is a mature project management platform for formal project governanc
 
 ### Huly
 **Stack:** TypeScript / PostgreSQL / Elasticsearch | **License:** EPL-2.0
-Huly is an open-source all-in-one workspace positioned as a replacement for Linear, Slack, and Notion, with **28,069 GitHub stars** . It bundles chat, project management (issues, sprints, milestones), collaborative documents, a planner and calendar, and an HR/recruiting module. It is self-hosted and fast, with granular permissions and a modern UI [citation:12]. **Trade-off:** It is heavy: a single active workspace consumes roughly 2.4 GB across Huly, Elasticsearch, Redpanda, and Postgres.
+Huly is an open-source all-in-one workspace positioned as a replacement for Linear, Slack, and Notion, with **28,069 GitHub_Stars** . It bundles chat, project management (issues, sprints, milestones), collaborative documents, a planner and calendar, and an HR/recruiting module. It is self-hosted and fast, with granular permissions and a modern UI [citation:12]. **Trade-off:** It is heavy: a single active workspace consumes roughly 2.4 GB across Huly, Elasticsearch, Redpanda, and Postgres.
 **Best for:** Engineering teams wanting a self-hosted Linear + Slack + Notion replacement in one platform, accepting significant infrastructure requirements.
 
 ### Tailchat
@@ -136,7 +136,7 @@ Contributions are welcome! If you know of an open-source Multi-Project Team Work
 
 Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
 
-**Note on the open-source ecosystem:** The multi-project workspace landscape splits between **Notion-style all-in-one workspaces** (AppFlowy for databases and docs, Huly for combining Linear + Slack + Notion, Flowplan for docs + whiteboards + handwriting) and **project-management-focused platforms** (Plane for engineering teams wanting Linear's workflow, OpenProject for formal governance with Gantt and budgets, Vikunja for the simplest possible self-hosted option, Taiga for scrum-first teams) . **AppFlowy** is the most widely adopted open-source Notion alternative with 78k+ stars . **Plane** is the strongest choice for software teams wanting a modern, Linear-like multi-project workspace . **OpenProject** remains the only open-source option with genuine Gantt charts, budgets, and hierarchical permissions suitable for procurement processes . For chat-centric workspaces with multi-workspace support, **Tailchat** offers a plugin-extensible alternative to Slack . No single open-source project fully replicates Notion's flexibility combined with Slack's real-time chat—the right choice depends on whether your primary need is documentation, project tracking, or team communication.
+**Note on the open-source ecosystem:** The multi-project workspace landscape splits between **Notion-style all-in-one workspaces** (AppFlowy for databases and docs, Huly for combining Linear + Slack + Notion, Flowplan for docs + whiteboards + handwriting) and **project-management-focused platforms** (Plane for engineering teams wanting Linear's workflow, OpenProject for formal governance with Gantt and budgets, Vikunja for the simplest possible self-hosted option, Taiga for scrum-first teams) . **AppFlowy** is the most widely adopted open-source Notion alternative with 78k+ GitHub_Stars . **Plane** is the strongest choice for software teams wanting a modern, Linear-like multi-project workspace . **OpenProject** remains the only open-source option with genuine Gantt charts, budgets, and hierarchical permissions suitable for procurement processes . For chat-centric workspaces with multi-workspace support, **Tailchat** offers a plugin-extensible alternative to Slack . No single open-source project fully replicates Notion's flexibility combined with Slack's real-time chat—the right choice depends on whether your primary need is documentation, project tracking, or team communication.
 
 ---
 
